@@ -12,12 +12,14 @@
         android:layout_height="128dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:onClick="markTile"
         app:layout_constraintBottom_toBottomOf="@+id/topLeftButton"
         app:layout_constraintEnd_toStartOf="@+id/topRightButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/topLeftButton"
         app:layout_constraintTop_toTopOf="@+id/topLeftButton"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="2" />
 
     <Button
         android:id="@+id/topLeftButton"
@@ -26,10 +28,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:onClick="markTile"
         app:layout_constraintEnd_toStartOf="@+id/topCenterButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1" />
 
     <Button
         android:id="@+id/topRightButton"
@@ -37,11 +41,13 @@
         android:layout_height="128dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:onClick="markTile"
         app:layout_constraintBottom_toBottomOf="@+id/topCenterButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/topCenterButton"
-        app:layout_constraintTop_toTopOf="@+id/topCenterButton" />
+        app:layout_constraintTop_toTopOf="@+id/topCenterButton"
+        tools:text="3" />
 
     <Button
         android:id="@+id/centerRightButton"
@@ -49,11 +55,13 @@
         android:layout_height="128dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:onClick="markTile"
         app:layout_constraintBottom_toBottomOf="@+id/centerButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/centerButton"
-        app:layout_constraintTop_toTopOf="@+id/centerButton" />
+        app:layout_constraintTop_toTopOf="@+id/centerButton"
+        tools:text="6" />
 
     <Button
         android:id="@+id/centerButton"
@@ -61,11 +69,13 @@
         android:layout_height="128dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:onClick="markTile"
         app:layout_constraintBottom_toBottomOf="@+id/centerLeftButton"
         app:layout_constraintEnd_toStartOf="@+id/centerRightButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/centerLeftButton"
-        app:layout_constraintTop_toTopOf="@+id/centerLeftButton" />
+        app:layout_constraintTop_toTopOf="@+id/centerLeftButton"
+        tools:text="5" />
 
     <Button
         android:id="@+id/bottomCenterButton"
@@ -73,12 +83,14 @@
         android:layout_height="128dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:onClick="markTile"
         app:layout_constraintBottom_toBottomOf="@+id/bottomLeftButton"
         app:layout_constraintEnd_toStartOf="@+id/bottomRightButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/bottomLeftButton"
         app:layout_constraintTop_toTopOf="@+id/bottomLeftButton"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="8" />
 
     <Button
         android:id="@+id/bottomLeftButton"
@@ -87,10 +99,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
+        android:onClick="markTile"
         app:layout_constraintEnd_toStartOf="@+id/bottomCenterButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/centerLeftButton" />
+        app:layout_constraintTop_toBottomOf="@+id/centerLeftButton"
+        tools:text="7" />
 
     <Button
         android:id="@+id/centerLeftButton"
@@ -99,10 +113,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
+        android:onClick="markTile"
         app:layout_constraintEnd_toStartOf="@+id/centerButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topLeftButton" />
+        app:layout_constraintTop_toBottomOf="@+id/topLeftButton"
+        tools:text="4" />
 
     <Button
         android:id="@+id/bottomRightButton"
@@ -110,17 +126,19 @@
         android:layout_height="128dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:onClick="markTile"
         app:layout_constraintBottom_toBottomOf="@+id/bottomCenterButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/bottomCenterButton"
-        app:layout_constraintTop_toTopOf="@+id/bottomCenterButton" />
+        app:layout_constraintTop_toTopOf="@+id/bottomCenterButton"
+        tools:text="9" />
 
     <Button
         android:id="@+id/newGameButton"
         android:layout_width="231dp"
         android:layout_height="49dp"
-        android:text="New Game"
+        android:text="@string/newGame"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -132,7 +150,7 @@
         android:layout_width="288dp"
         android:layout_height="33dp"
         android:layout_marginBottom="56dp"
-        android:text="Instruction output"
+        android:text="@string/playerXTurn"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/newGameButton"
