@@ -29,6 +29,30 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
     /**
+     * Gets all of the buttons that are used in the game
+     * and clears their text as well as re-enables them.
+     * Also sets the current player's turn to X's.
+     */
+    public void clearBoard(View view) {
+        Button[] allTileButtons = {
+                findViewById(R.id.topLeftButton),
+                findViewById(R.id.topCenterButton),
+                findViewById(R.id.topRightButton),
+                findViewById(R.id.centerLeftButton),
+                findViewById(R.id.centerButton),
+                findViewById(R.id.centerRightButton),
+                findViewById(R.id.bottomLeftButton),
+                findViewById(R.id.bottomCenterButton),
+                findViewById(R.id.bottomRightButton)
+        };
+
+        for (Button currentButton : allTileButtons) {
+            currentButton.setText(""); // clear button out
+            currentButton.setEnabled(true); // re-enable the button
+        }
+    }
+
+    /**
      * Determines what player's turn it is by checking the
      * text in the View with the id outputText.
      * @return The symbol that is taking their turn as a string
