@@ -50,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
             currentButton.setText(""); // clear button out
             currentButton.setEnabled(true); // re-enable the button
         }
+
+        TextView outputText = findViewById(R.id.outputText);
+        outputText.setText(R.string.playerXTurn);
     }
 
     /**
