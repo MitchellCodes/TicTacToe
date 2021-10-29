@@ -37,9 +37,11 @@ public class MainActivity extends AppCompatActivity {
         TextView outputText = findViewById(R.id.outputText);
         // looks in strings.xml for string with name of playerXTurn
         if (outputText.getText().equals("Player X's turn")) {
+            outputText.setText(R.string.playerOTurn);
             return "X";
         }
         else {
+            outputText.setText(R.string.playerXTurn);
             return "O";
         }
     }
