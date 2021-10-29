@@ -138,6 +138,7 @@
         android:id="@+id/newGameButton"
         android:layout_width="231dp"
         android:layout_height="49dp"
+        android:onClick="clearBoard"
         android:text="@string/newGame"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
