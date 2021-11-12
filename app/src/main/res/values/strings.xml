@@ -3,4 +3,7 @@
     <string name="playerXTurn">Player X\'s turn</string>
     <string name="playerOTurn">Player O\'s turn</string>
     <string name="newGame">New Game</string>
+    <string name="playerXWins">Player X wins!</string>
+    <string name="playerOWins">Player O wins!</string>
+    <string name="draw">Draw</string>
 </resources>

@@ -19,7 +19,7 @@
         app:layout_constraintStart_toEndOf="@+id/topLeftButton"
         app:layout_constraintTop_toTopOf="@+id/topLeftButton"
         app:layout_constraintVertical_bias="0.0"
-        tools:text="2" />
+        tools:text="1" />
 
     <Button
         android:id="@+id/topLeftButton"
@@ -33,7 +33,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="1" />
+        tools:text="0" />
 
     <Button
         android:id="@+id/topRightButton"
@@ -47,7 +47,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/topCenterButton"
         app:layout_constraintTop_toTopOf="@+id/topCenterButton"
-        tools:text="3" />
+        tools:text="2" />
 
     <Button
         android:id="@+id/centerRightButton"
@@ -61,7 +61,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/centerButton"
         app:layout_constraintTop_toTopOf="@+id/centerButton"
-        tools:text="6" />
+        tools:text="5" />
 
     <Button
         android:id="@+id/centerButton"
@@ -75,7 +75,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/centerLeftButton"
         app:layout_constraintTop_toTopOf="@+id/centerLeftButton"
-        tools:text="5" />
+        tools:text="4" />
 
     <Button
         android:id="@+id/bottomCenterButton"
@@ -90,7 +90,7 @@
         app:layout_constraintStart_toEndOf="@+id/bottomLeftButton"
         app:layout_constraintTop_toTopOf="@+id/bottomLeftButton"
         app:layout_constraintVertical_bias="1.0"
-        tools:text="8" />
+        tools:text="7" />
 
     <Button
         android:id="@+id/bottomLeftButton"
@@ -104,7 +104,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/centerLeftButton"
-        tools:text="7" />
+        tools:text="6" />
 
     <Button
         android:id="@+id/centerLeftButton"
@@ -118,7 +118,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topLeftButton"
-        tools:text="4" />
+        tools:text="3" />
 
     <Button
         android:id="@+id/bottomRightButton"
@@ -132,7 +132,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/bottomCenterButton"
         app:layout_constraintTop_toTopOf="@+id/bottomCenterButton"
-        tools:text="9" />
+        tools:text="8" />
 
     <Button
         android:id="@+id/newGameButton"
