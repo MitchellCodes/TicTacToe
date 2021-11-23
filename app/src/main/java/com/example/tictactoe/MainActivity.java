@@ -92,6 +92,19 @@ public class MainActivity extends AppCompatActivity {
                 findViewById(R.id.bottomRightButton)
         };
 
+        // check if the game was a draw (only need to check there are no tiles left enabled)
+        boolean areAllTilesFilled = true;
+        for (Button currentButton : allTileButtons) {
+            if (currentButton.getText().equals("")) {
+                areAllTilesFilled = false;
+            }
+        }
+
+        // the game was a draw
+        if (areAllTilesFilled) {
+            endGame(allTileButtons, "C");
+        }
+
         // check if the current player won in any row
         if (checkFor3(allTileButtons[0], allTileButtons[1], allTileButtons[2], symbol)
                 || checkFor3(allTileButtons[3], allTileButtons[4], allTileButtons[5], symbol)
@@ -110,19 +123,6 @@ public class MainActivity extends AppCompatActivity {
         if (checkFor3(allTileButtons[0], allTileButtons[4], allTileButtons[8], symbol)
                 || checkFor3(allTileButtons[2], allTileButtons[4], allTileButtons[6], symbol)) {
             endGame(allTileButtons, symbol);
-        }
-
-        // check if the game was a draw (only need to check there are no tiles left enabled)
-        boolean areAllTilesFilled = true;
-        for (Button currentButton : allTileButtons) {
-            if (currentButton.getText().equals("")) {
-                areAllTilesFilled = false;
-            }
-        }
-
-        // the game was a draw
-        if (areAllTilesFilled) {
-            endGame(allTileButtons, "C");
         }
     }
 
