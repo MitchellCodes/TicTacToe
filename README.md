@@ -1,5 +1,5 @@
 # TicTacToe
-A Tic-Tac-Toe game created as an assignment for Phone Programming in Android Studio.
+A Tic-Tac-Toe game created in Android Studio as an assignment for Phone Programming.
 
 ## Screenshots
 ![App when a new game is started](https://user-images.githubusercontent.com/82383787/162108053-66a35faf-b0a7-49bf-9db2-d9b73a33d393.PNG)
